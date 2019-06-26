@@ -3,10 +3,10 @@ const merge = require('webpack-merge');//合并配置
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')//用于提取css到文件中
-const OptimizeCssnanoPlugin = require('@intervolga/optimize-cssnano-plugin');
+const OptimizeCssnanoPlugin = require('@intervolga/optimize-cssnano-plugin');//用于压缩css代码
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')//用于清除上次打包的文件
-const CopyWebpackPlugin = require('copy-webpack-plugin')// 用户拷贝静态资源
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+const CopyWebpackPlugin = require('copy-webpack-plugin')// 用于拷贝静态资源
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin//查看打包体积分析
 
 module.exports = merge(webpackConfig,{
   mode:'production',
@@ -59,7 +59,7 @@ module.exports = merge(webpackConfig,{
   plugins:[
     new webpack.DefinePlugin({
       'process.env':{
-        NOOE_ENV:'production'
+        NOOE_ENV:JSON.stringify('production')
       }
     }),
     new MiniCssExtractPlugin({

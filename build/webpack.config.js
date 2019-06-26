@@ -15,7 +15,7 @@ module.exports = {
     //生成的chunk名称
     chunkFilename:'js/[name].[hash:8].js',
     //资源引用的路径
-    publicPath:'./'
+    publicPath:'/'
   },
   devServer: {
     hot: true,
