@@ -1,8 +1,8 @@
 # vue-cli
 
-### 1.启动项目
+## 1.启动项目
 
-1. 安装依赖库
+1.安装依赖库
 
 ```
 yarn install
@@ -38,7 +38,7 @@ postcss.config.js             # postcss配置文件
 README.md                     # 项目介绍文件
 ```
 
-##3.loader配置介绍
+## 3.loader配置介绍
 ```
 vue-loader                                   #用于解析.vue文件
 vue-template-compiler                        #用于编译解析template模板
@@ -52,7 +52,7 @@ sass-loader, dart-sass                       #主要是将 scss/sass 语法转�
 postcss-loader autoprefixer                  #自动添加css3前缀
 babel-loader @babel/core @babel/preset-env   #ES6/7/8 转 ES5代码
 ```
-##4.plugin配置介绍
+## 4.plugin配置介绍
 ```
 html-webpack-plugin                    #创建html页面，并自动引入打包生成的js文件
 clean-webpack-plugin                   #每次构建前清理 /dist 文件夹
@@ -64,12 +64,12 @@ webpack-bundle-analyzer                #查看打包体积分析
 @intervolga/optimize-cssnano-plugin    #用于压缩css代码
 DefinePlugin                           #定义环境变量
 ```
-##5.Other
+## 5.Other
 ```
 @babel/polyfill                         #babel-polyfill 对一些不支持新语法的客户端提供新语法的实现
 webpack-dev-server                      #实现热更新
 webpack-merge                           #合并配置
 ``` 
-##6.系列资料
+## 6.系列资料
 - [webpack loader](https://www.webpackjs.com/loaders/)
 - [webpack plugins](https://www.webpackjs.com/plugins/)
