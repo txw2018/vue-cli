@@ -42,7 +42,8 @@ module.exports = {
             loader:'vue-loader',
             options:{
               compilerOptions:{
-                preserveWhitespace:false
+                //去掉元素之间的空格
+                preserveWhitespace:false 
               }
             }
           }
