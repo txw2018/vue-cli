@@ -20,7 +20,7 @@ module.exports = {
   devServer: {
     hot: true,
     port: 3000,
-    contentBase: './dist'
+    contentBase: path.resolve(__dirname,'../dist')
   },
   resolve:{
     alias:{
