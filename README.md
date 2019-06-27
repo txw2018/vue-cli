@@ -58,11 +58,11 @@ html-webpack-plugin                    #创建html页面，并自动引入打包
 clean-webpack-plugin                   #每次构建前清理 /dist 文件夹
 webpack.NamedModulesPlugin             #当开启 HMR 的时候使用该插件会显示模块的相对路径，建议用于开发环境
 webpack.HotModuleReplacementPlugin     #启用HMR
-copy-webpack-plugin                    #允许在编译时(compile time)配置的全局常量
+copy-webpack-plugin                    #用户拷贝静态资源
 mini-css-extract-plugin                #用于提取css到文件中
 webpack-bundle-analyzer                #查看打包体积分析
 @intervolga/optimize-cssnano-plugin    #用于压缩css代码
-DefinePlugin                           #定义环境变量
+DefinePlugin                           #允许在编译时(compile time)配置的全局常量,定义环境变量
 vue-loader/lib/plugin                  #将你定义过的其它规则复制并应用到 .vue 文件里相应语言的块。例如，如果你有一条匹配 /\.js$/ 的规则，那么它会应用到 .vue 文件里的 <script> 块。
 ```
 ## 5.Other
